@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: #540a99;
+    background: linear-gradient(to right, #764aa0, #3f0366);
     height: 100vh;
     width: 100vw;
     display: flex;
@@ -60,4 +60,19 @@ button:hover {
     margin-top: 20px;
     height: 35px;
 
+}
+
+@media screen and (max-width: 560px) {
+
+    body {
+        flex-direction: column
+    }
+
+    h2 {
+        margin-bottom: 100px;
+    }
+
+    .container {
+        margin-left: 0px;
+    }
 }
