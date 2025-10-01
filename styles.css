@@ -73,6 +73,6 @@ button:hover {
     }
 
     .container {
-        margin-left: 0px;
+       margin: 0;
     }
 }
