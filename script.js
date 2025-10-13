@@ -1,4 +1,4 @@
-let milesimos = 0
+let centesimos = 0
 let segundos = 0
 let minutos = 0
 let horas = 0
@@ -11,9 +11,9 @@ function iniciarCronometro() {
 }
 
 function atualizarConometro() {
-    milesimos++
-    if (milesimos === 100) {
-        milesimos = 0
+    centesimos++
+    if (centesimos === 100) {
+        centesimos = 0
         segundos++
         if (segundos === 60) {
             segundos = 0
@@ -31,8 +31,8 @@ function exibirTempo() {
     const horasFormatadas = String(horas).padStart(2, '0')
     const segundosFormatados = String(segundos).padStart(2, '0')
     const minutosFormatados = String(minutos).padStart(2, '0')
-    const milesimosFormatados = String(milesimos).padStart(2, '0')
-    p.innerHTML = `${horasFormatadas}:${minutosFormatados}:${segundosFormatados}<span>${milesimosFormatados}</span>`
+    const centesimosFormatados = String(centesimos).padStart(2, '0')
+    p.innerHTML = `${horasFormatadas}:${minutosFormatados}:${segundosFormatados}<span>${centesimosFormatados}</span>`
 }
 
 function pausarCronometro() {
@@ -46,6 +46,6 @@ function resetarCronometro() {
     horas = 0
     segundos = 0
     minutos = 0
-    milesimos = 0
+    centesimos = 0
     exibirTempo()
 }
