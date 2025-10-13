@@ -43,6 +43,11 @@ p {
     color: rgba(175, 179, 175, 0.533);
 }
 
+span {
+    font-weight: 500;
+    font-size: 12px;
+}
+
 button {
     font-size: 30px;
     cursor: pointer;
